@@ -1,0 +1,90 @@
+.btn {
+    background: #37474F;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: medium;
+    font-family: Arial;
+    border-radius: 3px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    .imageContainer {
+        flex: 1;
+        background: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .image {
+        max-width: 100%;
+        max-height: 80%;
+        border-radius: 8px;
+    }
+
+    .formContainer {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .header {
+        font-family: Roboto, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .inputContainer {
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .errorMessage {
+        color: red;
+        font-size: 12px;
+    }
+
+    button {
+        background: #55229e;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .link {
+        color: #55229e;
+        margin-left: 5px;
+    }
+}

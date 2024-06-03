@@ -1,0 +1,133 @@
+/**{*/
+/*<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">*/
+
+/*}*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.imageContainer {
+    flex: 1;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.image {
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+.formContainer{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.header {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.inputContainer{
+    margin-bottom: 10px;
+}
+.input {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.errorMessage{
+    color: red;
+    font-size: 12px;
+}
+.button {
+    background: #55229e;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.link{
+    color: #55229e;
+    margin-left: 5px;
+}
+
+.imageContainer {
+    flex: 1;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px
+}
+.formContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px
+}
+.header {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.questionsList{
+    list-style-type: none;
+    padding: 0;
+
+}
+.questionItem {
+    margin-bottom: 20px;
+
+}
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px
+}
+.paginationButton {
+    background: #55229e;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 796px) {
+    .container {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image {
+        display: none;
+    }
+
+    .input {
+        width: 70%;
+    }
+}
